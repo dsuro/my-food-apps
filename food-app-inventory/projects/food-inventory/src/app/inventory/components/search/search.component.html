@@ -1,0 +1,19 @@
+<div class="row mx-0 px-0">
+  <div class="col-md-4">
+    Search By &nbsp;
+    Restaurant <p-radioButton name="groupname" value="R" [(ngModel)]="searchType" (click)="onSearchTypeChange($event)"></p-radioButton>/&nbsp;
+    Food <p-radioButton name="groupname" value="F" [(ngModel)]="searchType" (click)="onSearchTypeChange($event)"></p-radioButton>
+  </div>
+  <div class="col-md-8">
+    <p-autoComplete [(ngModel)]="keyword"  [minLength]="1"
+     [suggestions]="results" (completeMethod)="search($event)" (onClear)="onSearchClear()"
+     (onSelect)="onItemSelect($event)" styleClass="search-autocomplete">
+      <ng-template let-value pTemplate="item">
+        <span style="font-size:18px">{{value}}</span>
+      </ng-template>
+      <ng-template let-value pTemplate="selectedItem">
+        <span style="font-size:18px">{{value}}</span>
+      </ng-template>
+    </p-autoComplete>
+  </div>
+</div>

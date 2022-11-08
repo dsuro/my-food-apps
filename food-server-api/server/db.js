@@ -1,0 +1,12 @@
+module.exports=()=>{
+    return{
+        login:require("./json/user_login.json"),
+        userDetails:require("./json/user_details.json"),
+		updateCustomerDetails:require("./json/update_customer_details.json"),
+        customerOrders:require("./json/customer_orders.json"),
+        keywordSearch:require("./json/foods.json"),
+        searchResults:require("./json/search_result.json"),
+        foodInventory:require("./json/all_restaurants.json"),
+		orders:require("./json/order_placed.json")
+    }
+};

@@ -1,0 +1,119 @@
+{
+	"$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+	"version": 1,
+	"newProjectRoot": "projects",
+	"projects": {
+		"food-orders": {
+			"projectType": "application",
+			"schematics": {},
+			"root": "projects/food-orders",
+			"sourceRoot": "projects/food-orders/src",
+			"prefix": "app",
+			"architect": {
+				"build": {
+					"builder": "ngx-build-plus:browser",
+					"options": {
+						"outputPath": "dist/food-orders",
+						"index": "projects/food-orders/src/index.html",
+						"main": "projects/food-orders/src/main.ts",
+						"polyfills": "projects/food-orders/src/polyfills.ts",
+						"tsConfig": "projects/food-orders/tsconfig.app.json",
+						"assets": [
+							"projects/food-orders/src/favicon.ico",
+							"projects/food-orders/src/assets"
+						],
+						"styles": [
+							"node_modules/font-awesome/css/font-awesome.min.css",
+							"node_modules/bootstrap/dist/css/bootstrap.min.css",
+							"node_modules/primeicons/primeicons.css",
+							"node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+							"node_modules/primeng/resources/primeng.min.css",
+							"projects/food-orders/src/styles.css"
+						],
+						"scripts": [
+							"node_modules/jquery/dist/jquery.min.js",
+							"node_modules/bootstrap/dist/js/bootstrap.min.js"
+						],
+						"extraWebpackConfig": "projects/food-orders/webpack.config.js",
+						"commonChunk": false
+					},
+					"configurations": {
+						"production": {
+							"budgets": [
+								{
+									"type": "initial",
+									"maximumWarning": "600kb",
+									"maximumError": "1mb"
+								},
+								{
+									"type": "anyComponentStyle",
+									"maximumWarning": "2kb",
+									"maximumError": "4kb"
+								}
+							],
+							"fileReplacements": [
+								{
+									"replace": "projects/food-orders/src/environments/environment.ts",
+									"with": "projects/food-orders/src/environments/environment.prod.ts"
+								}
+							],
+							"outputHashing": "all",
+							"extraWebpackConfig": "projects/food-orders/webpack.prod.config.js"
+						},
+						"development": {
+							"buildOptimizer": false,
+							"optimization": false,
+							"vendorChunk": true,
+							"extractLicenses": false,
+							"sourceMap": true,
+							"namedChunks": true
+						}
+					},
+					"defaultConfiguration": "production"
+				},
+				"serve": {
+					"builder": "ngx-build-plus:dev-server",
+					"configurations": {
+						"production": {
+							"browserTarget": "food-orders:build:production",
+							"extraWebpackConfig": "projects/food-orders/webpack.prod.config.js"
+						},
+						"development": {
+							"browserTarget": "food-orders:build:development"
+						}
+					},
+					"defaultConfiguration": "development",
+					"options": {
+						"port": 5002,
+						"publicHost": "http://localhost:5002",
+						"extraWebpackConfig": "projects/food-orders/webpack.config.js"
+					}
+				},
+				"extract-i18n": {
+					"builder": "ngx-build-plus:extract-i18n",
+					"options": {
+						"browserTarget": "food-orders:build",
+						"extraWebpackConfig": "projects/food-orders/webpack.config.js"
+					}
+				},
+				"test": {
+					"builder": "@angular-devkit/build-angular:karma",
+					"options": {
+						"main": "projects/food-orders/src/test.ts",
+						"polyfills": "projects/food-orders/src/polyfills.ts",
+						"tsConfig": "projects/food-orders/tsconfig.spec.json",
+						"karmaConfig": "projects/food-orders/karma.conf.js",
+						"assets": [
+							"projects/food-orders/src/favicon.ico",
+							"projects/food-orders/src/assets"
+						],
+						"styles": [
+							"projects/food-orders/src/styles.css"
+						],
+						"scripts": []
+					}
+				}
+			}
+		}
+	}
+}

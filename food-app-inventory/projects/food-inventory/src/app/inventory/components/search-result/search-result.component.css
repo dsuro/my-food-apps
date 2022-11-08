@@ -1,0 +1,46 @@
+.food-image{
+    width: 318px;
+    height: 190px;
+}
+.restaurant-image{
+    width: 800px;
+    height: 400px;
+}
+.restaurant-div{
+    padding: 0px 50px 0px 110px;
+}
+.restaurant-rating{
+    padding: 2px;
+    background: green;
+    color: white;
+}
+.add-to-cart{
+    width: 110px;
+    border: 1px dotted green;
+}
+.item-rating{
+    float: right;
+    padding: 2px;
+    background: green;
+    color: white;
+}
+.start-icon{
+    font-size: 9px;
+}
+.text-ellipsis {
+    display: table-cell;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#quantity{
+    width: 35px;
+}
+.title{
+ font-size: 15px;
+ font-weight: bold;
+}
+.menu-item-section{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+}

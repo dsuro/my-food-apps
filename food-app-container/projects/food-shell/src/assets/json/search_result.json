@@ -1,0 +1,88 @@
+{
+    "data":[
+        {
+            "itemId": 1,
+            "itemName": "Aminia",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/2/20012/9e061f6e1939991a4e75acb714c7edff_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "3.7"
+        },
+        {
+            "itemId": 2,
+            "itemName": "Adil Biryani Centre",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/3/22833/c84a3794649ec3a804f3e9961fbdcbc8_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.1"
+        },
+        {
+            "itemId": 3,
+            "itemName": "Rayyan Biryani",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/9/18561959/ee567c3cf31026c101a2df50060c310a_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "3.7"
+        },
+        {
+            "itemId": 4,
+            "itemName": "Super Star Hazi Biryani",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/1/19191081/3373f8899656829e582210f618193483_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "3.4"
+        },
+        {
+            "itemId": 5,
+            "itemName": "Zam Zam",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/chains/6/22656/3ff275dd05129167155e7e37c536c20f_o2_featured_v2.png",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.3"
+        },
+        {
+            "itemId": 6,
+            "itemName": "Oudh 1590",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/8/25628/fe1b1db0eb1e51160f6c0c9ffa2d648a_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.2"
+        },
+        {
+            "itemId": 7,
+            "itemName": "Shiraz Golden Restaurant",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/7/21527/83aea51c7f7b846aff539cc12df105d5_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.2"
+        },
+        {
+            "itemId": 8,
+            "itemName": "Royal Indian Hotel  - Since 1905",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/1/21411/54778d99d9a20f5d73724971500c89ca_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.3"
+        },
+        {
+            "itemId": 9,
+            "itemName": "Kabuliwala",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/9/19636799/5f77af0c023c5b2fdb51d19282cbbe16_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "3.9"
+        },
+        {
+            "itemId": 10,
+            "itemName": "Zeeshan Restaurant",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/2/20602/8d2f781aba85428628d124dd819ce888_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.0"
+        },
+        {
+            "itemId": 11,
+            "itemName": "Behrouz Biryani",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/chains/2/19090652/7d1d6155fa28b3864c1f71342eea8b1c_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.2"
+        },
+        {
+            "itemId": 12,
+            "itemName": "6 Ballygunge Place Take Away",
+            "itemUrl": "https://b.zmtcdn.com/data/pictures/chains/2/20002/2b1c124a092a5d08805dd6224b67e2e8_o2_featured_v2.jpg",
+            "itemCost": "₹200 for one",
+            "itemRating": "4.3"
+        }
+    ]
+}

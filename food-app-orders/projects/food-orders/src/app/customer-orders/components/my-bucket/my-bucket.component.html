@@ -1,0 +1,40 @@
+<div class="row mx-0 px-0">
+  <div class="col-md-12">
+    <div *ngFor="let restro of restaurants">
+      <span class="label-style">Restaurant Name:</span><span>{{restro.groupKey}}</span>
+      <ul class="list-style">
+        <li  *ngFor="let item of restro.items let i=index" class="list-item">
+          <div class="row pb-2">
+            <div class="col-md-12 label-style">
+              Item #{{i+1}}
+            </div>
+            <div class="col-md-4">
+              <img  [src]="item.itemUrl" loading="lazy" class="food-image">
+            </div>
+            <div class="col-md-8">
+              <span class="label-style">Name:</span>{{item.itemName}}<br>
+              <span class="label-style">Quantity:</span>{{item.quantity}}<br>
+              <span class="label-style">Price:</span>{{item.pricePerQuantity}} X {{item.quantity}}<br>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-12" [hidden]="orders.length==0">
+    <div class="row">
+      <div class="col-md-4">
+        &nbsp;
+      </div>
+      <div class="col-md-8">
+        <span class="label-style">Total Price: </span>{{totalPrice}}<br>
+        <span class="label-style">GST({{gst}} %): </span>{{tax}}<br>
+        <span class="label-style">Total Amount:</span>{{totalAmount}}<br>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 pt-2 action-div">
+    <button (click)="onClearBucket()" [disabled]="orders.length==0">Clear Order</button>&nbsp;&nbsp;
+    <button (click)="onOrderPlace()" [disabled]="orders.length==0">Place Order</button>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+{
+    "data":[
+        {
+            "orderId":"123456",
+            "orderItems":[
+                {
+                    "itemId": 1,
+                    "itemName": "Chiken Biriyani",
+                    "quantity":1,
+                    "pricePerQuantity":200.00,
+                    "restaurantName": "Aminia",
+                    "restaurantId":1001,
+                    "itemUrl": "https://b.zmtcdn.com/data/pictures/2/20012/9e061f6e1939991a4e75acb714c7edff_o2_featured_v2.jpg",
+                    "itemRating": "3.7"
+                },
+                {
+                    "itemId": 2,
+                    "itemName": "Mutton Kasha",
+                    "quantity":1,
+                    "pricePerQuantity":250.00,
+                    "restaurantName": "Aminia",
+                    "restaurantId":1001,
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/ca5/8e0b4b40f37177fd8392f8771178aca5.jpg",
+                    "itemRating": "4.1"
+                }
+            ],
+            "orderDate":"04/11/2022",
+            "totalAmount":"488.25",
+            "tax":"38.25"
+        }
+    ]
+}

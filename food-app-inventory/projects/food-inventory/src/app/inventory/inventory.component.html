@@ -1,0 +1,8 @@
+<div class="row px-0 mx-0">
+  <div class="col-md-12 pt-2">
+   <app-search (onSearchItemSelect)="onItemSelect($event)"></app-search>
+  </div>
+  <div class="col-md-12 px-0 mx-0">
+    <app-search-result [searchCriteria]="searchCriteria" (onAddToCart)="onItemAddToCart($event)"></app-search-result>
+   </div>
+</div>

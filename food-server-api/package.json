@@ -1,0 +1,11 @@
+{
+  "name": "food-server-api",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

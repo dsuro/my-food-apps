@@ -1,0 +1,24 @@
+{
+    "data":[
+        {
+            "foodId":1001,
+            "foodName":"Chicken Biriyani"
+        },
+        {
+            "foodId":1002,
+            "foodName":"Mutton Biriyani"
+        },
+        {
+            "foodId":1003,
+            "foodName":"Egg Biriyani"
+        },
+        {
+            "foodId":1004,
+            "foodName":"Veg Biriyani"
+        },
+        {
+            "foodId":1005,
+            "foodName":"Dum Biriyani"
+        }
+    ]
+}

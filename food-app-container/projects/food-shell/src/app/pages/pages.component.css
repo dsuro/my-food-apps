@@ -1,0 +1,12 @@
+.header{
+    height: 75px;
+    border: 1px solid green;
+}
+.content{
+    height: auto;
+    min-height: 500px;
+}
+.footer{
+    height: 75px;
+    border: 1px solid green;
+}

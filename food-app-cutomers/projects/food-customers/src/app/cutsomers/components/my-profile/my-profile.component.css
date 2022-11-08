@@ -1,0 +1,7 @@
+.invalid-feedback{
+    display: block !important;
+    color: #f44336 !important;
+}
+.required-field{
+    color: #f44336;
+}
