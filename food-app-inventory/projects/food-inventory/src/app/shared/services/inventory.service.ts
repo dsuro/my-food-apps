@@ -13,6 +13,19 @@ constructor(private http:HttpClient,private helperService:HelperService) { }
     public inventory:Object;
     public inventoryObservable:Observable<any>=null;
 
+    getFoodInventory():Observable<any>{
+        if(this.inventory){ 
+           this.inventoryObservable=of(this.inventory);
+        }
+        else{
+            const resourceUrl=this.helperService.getResourceUrl(SharedConstants.FOOD_INVENTORY_URL,true);
+            this.inventoryObservable=this.http.get(resourceUrl).pipe(map((res:any)=>{
+                this.inventory=res['data'];
+                return this.inventory;
+            },share()));
+        }
+        return this.inventoryObservable;
+    }
     getSearchKeywords(searchType:string,keyword:string):Observable<any>{
         let result:string[]=[];
         if(searchType && keyword){
@@ -48,20 +61,6 @@ constructor(private http:HttpClient,private helperService:HelperService) { }
             }
         }
         return of(result);
-    }
-    getFoodInventory():Observable<any>{
-        if(this.inventory){ 
-           this.inventoryObservable=of(this.inventory);
-        }
-        else{
-            const resourceUrl=this.helperService.getResourceUrl(SharedConstants.FOOD_INVENTORY_URL);
-            this.inventoryObservable=this.http.get(resourceUrl).pipe(map((res:any)=>{
-                this.inventory=res['data'];
-                return this.inventory;
-            },share()));
-          
-        }
-        return this.inventoryObservable;
     }
     getUniqRestaurantList(data:any){
         let list=[];

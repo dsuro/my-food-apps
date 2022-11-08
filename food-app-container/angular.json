@@ -18,6 +18,7 @@
 						"main": "projects/food-shell/src/main.ts",
 						"polyfills": "projects/food-shell/src/polyfills.ts",
 						"tsConfig": "projects/food-shell/tsconfig.app.json",
+						"allowedCommonJsDependencies": ["lodash","chart.js"],
 						"assets": [
 							"projects/food-shell/src/favicon.ico",
 							"projects/food-shell/src/assets"
@@ -42,13 +43,13 @@
 							"budgets": [
 								{
 									"type": "initial",
-									"maximumWarning": "560kb",
-									"maximumError": "1mb"
+									"maximumWarning": "2mb",
+									"maximumError": "5mb"
 								},
 								{
 									"type": "anyComponentStyle",
-									"maximumWarning": "2kb",
-									"maximumError": "4kb"
+									"maximumWarning": "2mb",
+									"maximumError": "5mb"
 								}
 							],
 							"fileReplacements": [
@@ -57,8 +58,14 @@
 									"with": "projects/food-shell/src/environments/environment.prod.ts"
 								}
 							],
+							"extraWebpackConfig": "projects/food-shell/webpack.prod.config.js",
 							"outputHashing": "all",
-							"extraWebpackConfig": "projects/food-shell/webpack.prod.config.js"
+							"buildOptimizer": true,
+							"optimization":true,
+							"vendorChunk": false,
+							"extractLicenses": true,
+							"sourceMap": false,
+							"namedChunks": false
 						},
 						"development": {
 							"buildOptimizer": false,

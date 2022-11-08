@@ -1,0 +1,208 @@
+{
+    "data": [
+        {
+            "restaurantUrl": "https://b.zmtcdn.com/data/pictures/5/20795/b0c9e8aee10bb2d1794ba7b90d567803.jpg",
+            "restaurantName": "Arsalan",
+            "foodItems": [
+                {
+                    "itemId": 20001,
+                    "itemName": "Chicken Biryani",
+                    "pricePerQuantity": 335,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/d24/5cf47577b171ab38be93fa5d289cfd24.jpg"
+                },
+                {
+                    "itemId": 2002,
+                    "itemName": "Mutton Biryani",
+                    "pricePerQuantity": 335,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/c9e/5f5e27e7f37b6e83b0c964649db83c9e.jpg"
+                },
+                {
+                    "itemId": 2003,
+                    "itemName": "Egg Biryani",
+                    "pricePerQuantity": 245,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/fb8/ac1803d43c05062cf0d291bb0dc64fb8.jpg"
+                },
+                {
+                    "itemId": 2004,
+                    "itemName": "Mutton Kasha",
+                    "pricePerQuantity": 260,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/f94/8f190f3be9ff3f3071c9483e86d46f94.jpg"
+                },
+                {
+                    "itemId": 2005,
+                    "itemName": "Mutton Rezala",
+                    "pricePerQuantity": 225,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.3",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/f1d/8cdbfea9fbac2afb0b50bbb7ed64af1d.jpg"
+                },
+                {
+                    "itemId": 2006,
+                    "itemName": "Chicken Rezala",
+                    "pricePerQuantity": 250,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/5c9/0f611fb9ab4adefb03ed186486d7e5c9.jpg"
+                },
+                {
+                    "itemId": 2007,
+                    "itemName": "Chicken Chaap",
+                    "pricePerQuantity": 245,
+                    "quantity": 1,
+                    "restaurantName": "Arsalan",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_37438322",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/204/7ddd5870ba26f1c9153abdf38e541204.jpg"
+                }
+            ],
+            "rating": "4.2",
+            "restaurantId": "restaurant_37438322"
+        },
+        {
+            "restaurantUrl": "https://b.zmtcdn.com/data/pictures/1/21411/9cf1a5db5eed9f5d2191119076d4b2a4.jpg",
+            "restaurantName": "Royal Indian Hotel",
+            "foodItems": [
+                {
+                    "itemId": 30001,
+                    "itemName": "Chicken Biryani",
+                    "pricePerQuantity": 265,
+                    "quantity": 1,
+                    "restaurantName": "Royal Indian Hotel",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_40637478",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/76b/74f0bbe2ac4825d01e2fe6484597b76b.jpg"
+                },
+                {
+                    "itemId": 3002,
+                    "itemName": "Mutton Biryani",
+                    "pricePerQuantity": 275,
+                    "quantity": 1,
+                    "restaurantName": "Royal Indian Hotel",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_40637478",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/864/5dfc0ce6936f7fa13b33bf4104837864.jpg"
+                },
+                {
+                    "itemId": 3003,
+                    "itemName": "Mutton Rezala",
+                    "pricePerQuantity": 200,
+                    "quantity": 1,
+                    "restaurantName": "Royal Indian Hotel",
+                    "itemRating": "4.1",
+                    "restaurantId": "restaurant_40637478",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/b12/b37d1ced12cd3544413d4df3b6c35b12.jpg"
+                },
+                {
+                    "itemId": 3004,
+                    "itemName": "Chicken Rezala",
+                    "pricePerQuantity": 240,
+                    "quantity": 1,
+                    "restaurantName": "Royal Indian Hotel",
+                    "itemRating": "4.2",
+                    "restaurantId": "restaurant_40637478",
+                    "itemUrl": "https://b.zmtcdn.com/data/pictures/1/21411/54778d99d9a20f5d73724971500c89ca_o2_featured_v2.jpg"
+                }
+            ],
+            "rating": "4.3",
+            "restaurantId": "restaurant_40637478"
+        },
+        {
+            "restaurantUrl": "https://b.zmtcdn.com/data/pictures/2/20012/bdeb9c3008d1883ec83e8734db8443cf_featured_v2.jpg",
+            "restaurantName": "Aminia",
+            "foodItems": [
+                {
+                    "itemId": 10001,
+                    "itemName": "Chicken Biryani",
+                    "pricePerQuantity": 260,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "3.7",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/dd7/cceea8ee7bafd453567153e5f459bdd7.jpg"
+                },
+                {
+                    "itemId": 1002,
+                    "itemName": "Mutton Biryani",
+                    "pricePerQuantity": 260,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "3.9",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/7d0/7c66c227630483e817173cdc939f27d0.jpg"
+                },
+                {
+                    "itemId": 1003,
+                    "itemName": "Egg Biryani",
+                    "pricePerQuantity": 190,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "4.3",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/ab3/e169422047dc5efc511135dc8e990ab3.jpg"
+                },
+                {
+                    "itemId": 1004,
+                    "itemName": "Mutton Kasha",
+                    "pricePerQuantity": 230,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "3.9",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/ca5/8e0b4b40f37177fd8392f8771178aca5.jpg"
+                },
+                {
+                    "itemId": 1005,
+                    "itemName": "Mutton Rezala",
+                    "pricePerQuantity": 225,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "4.3",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/9bb/2d3da206029f33e61961d5a267a209bb.jpg"
+                },
+                {
+                    "itemId": 1006,
+                    "itemName": "Chicken Rezala",
+                    "pricePerQuantity": 210,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "3.9",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/e96/653042f80673a7da8e8833ef461cce96.jpg"
+                },
+                {
+                    "itemId": 1007,
+                    "itemName": "Chicken Chaap",
+                    "pricePerQuantity": 215,
+                    "quantity": 1,
+                    "restaurantName": "Aminia",
+                    "itemRating": "4.3",
+                    "restaurantId": "restaurant_98872659",
+                    "itemUrl": "https://b.zmtcdn.com/data/dish_photos/c96/5af0e307322de3488c5ffdbdcd4d9c96.jpg"
+                }
+            ],
+            "rating": "4.2",
+            "restaurantId": "restaurant_98872659"
+        }
+    ]
+}

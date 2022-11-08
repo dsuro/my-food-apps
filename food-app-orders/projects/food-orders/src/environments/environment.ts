@@ -6,8 +6,7 @@ export const environment = {
   production: false,
   localServerUrl:'http://localhost:4900/',
   assetServerUrl:'http://localhost:5000/',
-  //baseServerUrl:'http://localhost:8080/',
-  baseServerUrl:'https://inxy54ewq7.execute-api.ap-south-1.amazonaws.com/',
+  orderServerUrl:'http://localhost:4900/'
 };
 
 /*

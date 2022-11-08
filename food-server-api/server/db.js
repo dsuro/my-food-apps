@@ -1,12 +1,10 @@
 module.exports=()=>{
     return{
-        login:require("./json/user_login.json"),
-        userDetails:require("./json/user_details.json"),
-		updateCustomerDetails:require("./json/update_customer_details.json"),
-        customerOrders:require("./json/customer_orders.json"),
-        keywordSearch:require("./json/foods.json"),
-        searchResults:require("./json/search_result.json"),
-        foodInventory:require("./json/all_restaurants.json"),
-		orders:require("./json/order_placed.json")
+        customers_login:require("./json/customer_login.json"),
+        customers_profile:require("./json/customers_profile.json"),
+		customers_update:require("./json/customers_update.json"),
+        orders_customer:require("./json/orders_customer.json"),
+        foodInventory:require("./json/food_inventory.json"),
+		orders_palced:require("./json/order_placed.json")
     }
 };

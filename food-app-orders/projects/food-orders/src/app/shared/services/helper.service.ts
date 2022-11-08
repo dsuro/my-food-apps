@@ -9,13 +9,14 @@ export class HelperService {
 
     getResourceUrl(resourceApi,isLocal=false,isAsset=false){
         if(isLocal){
+            resourceApi=resourceApi.split('/').join('_').split('-').join('_');
             return environment.localServerUrl+resourceApi;
         }
         else if(isAsset){
             return environment.assetServerUrl+resourceApi;
         }
         else{
-            return environment.baseServerUrl+resourceApi;
+            return environment.orderServerUrl+resourceApi;
         }
     }
 }

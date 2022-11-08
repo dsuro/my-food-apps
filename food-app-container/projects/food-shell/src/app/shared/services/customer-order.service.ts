@@ -14,12 +14,12 @@ export class CustomerOrderService {
   constructor(private http:HttpClient,private helperService:HelperService) { }
 
   public placeOrder(orderDetails: any):Observable<any>{
-    const resourceUrl=this.helperService.getOrderResourceUrl(SharedConstants.CUSTOMER_ORDER_PLACE_URL);
+    const resourceUrl=this.helperService.getOrderResourceUrl(SharedConstants.CUSTOMER_ORDER_PLACE_URL,true);
     return this.http.post(resourceUrl,orderDetails);
   }
   getCustomerDetails(customerToken:string){
     if(customerToken){
-      const resourceUrl=this.helperService.getResourceUrl(SharedConstants.GET_CUSTOMER_PROFILE_URL)+`?customerToken=${customerToken}`;
+      const resourceUrl=this.helperService.getResourceUrl(SharedConstants.GET_CUSTOMER_PROFILE_URL,true)+`?customerToken=${customerToken}`;
       return this.http.get(resourceUrl);
     }
     else{

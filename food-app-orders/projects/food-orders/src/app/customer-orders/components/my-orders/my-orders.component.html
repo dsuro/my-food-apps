@@ -6,8 +6,8 @@
       <span class="label-style">Date#:</span><span>
         {{order.orderDate | date:'longDate'}} &nbsp;{{order.orderDate | date:'mediumTime'}}
       </span> &nbsp;
-      <span class="label-style">Total Amount#:</span><span>{{order.totalAmount}}</span> &nbsp;
-      <span class="label-style">Tax#:</span><span>{{order.tax}}</span> &nbsp;
+      <span class="label-style">Total Amount#:</span><span>&#x20b9;{{order.totalAmount}}</span> &nbsp;
+      <span class="label-style">Tax#:</span><span>&#x20b9;{{order.tax}}</span> &nbsp;
       <ul class="list-style">
         <li  *ngFor="let item of order.orderItems let i=index" class="list-item">
           <div class="row pb-2">
@@ -20,7 +20,7 @@
             <div class="col-md-8">
               <span class="label-style">Name:</span>{{item.itemName}}<br>
               <span class="label-style">Quantity:</span>{{item.quantity}}<br>
-              <span class="label-style">Price:</span>{{item.pricePerQuantity}} X {{item.quantity}}<br>
+              <span class="label-style">Price:</span>&#x20b9;{{item.pricePerQuantity}} X {{item.quantity}}<br>
             </div>
           </div>
         </li>

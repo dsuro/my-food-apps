@@ -13,7 +13,7 @@ export class CustomerOrdersService {
 
   getCustomerOrders(customerToken:string):Observable<any>{
     if(customerToken){
-      const resourceUrl=this.helperService.getResourceUrl(SharedConstants.CUSTOMER_ORDERS_URL)+`?customerToken=${customerToken}`;
+      const resourceUrl=this.helperService.getResourceUrl(SharedConstants.CUSTOMER_ORDERS_URL,true)+`?customerToken=${customerToken}`;
       return this.http.get(resourceUrl);
     }
     else{

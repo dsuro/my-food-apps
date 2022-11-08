@@ -6,20 +6,22 @@ export class HelperService {
 
     constructor() { }
 
-    getResourceUrl(resourceApi,isLocal=false,isAsset=false){
+    getResourceUrl(resourceApi:string,isLocal=false,isAsset=false){
         if(isLocal){
+            resourceApi=resourceApi.split('/').join('_').split('-').join('_');
             return environment.localServerUrl+resourceApi;
         }
         else if(isAsset){
             return environment.assetServerUrl+resourceApi;
         }
         else{
-            return environment.baseServerUrl+resourceApi;
+            return environment.customerServerUrl+resourceApi;
         }
     }
 
     getOrderResourceUrl(resourceApi,isLocal=false,isAsset=false){
         if(isLocal){
+            resourceApi=resourceApi.split('/').join('_').split('-').join('_');
             return environment.localServerUrl+resourceApi;
         }
         else if(isAsset){

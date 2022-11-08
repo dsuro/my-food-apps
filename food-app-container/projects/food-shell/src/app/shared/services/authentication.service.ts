@@ -12,7 +12,7 @@ export class AuthenticationService {
     constructor(private http:HttpClient,private helperService:HelperService) { }
 
     public login(userModel: any):Observable<any>{
-        const resourceUrl=this.helperService.getResourceUrl(SharedConstants.LOGIN_URL);
+        const resourceUrl=this.helperService.getResourceUrl(SharedConstants.LOGIN_URL,true);
         //console.log(userModel);
         return this.http.post(resourceUrl,userModel)
         .pipe(tap((userTokenData)=>{

@@ -34,10 +34,27 @@ export class HomeComponent implements OnInit {
     let orders=cloneDeep(this.customerOrderService.getOrders());
     //console.log("Existing orders::",orders);
     const newOrder=event['detail']['data'];
-    orders.push(newOrder);
+    orders=this.checkForOrderExists(newOrder,orders);
     this.customerOrderService.setOrders(orders);
-    //console.log(this.customerOrderService.getOrders());
+    //console.log("Updated orders::",this.customerOrderService.getOrders());
     this.customerOrderService.sendItemAdded(newOrder);
     this.messageService.add({severity:'success', summary:'Item is added', detail:'Item is added'});
+  }
+  checkForOrderExists(newOrder:any,orders:Array<any>){
+    if(newOrder && orders){
+      let found=false;
+      orders.forEach(element => {
+        if(element['itemId']==newOrder['itemId'])
+        {
+          const quantity=element['quantity'];
+          element['quantity']=quantity + newOrder['quantity'];
+          found=true;
+        }
+      });
+      if(!found){
+        orders.push(newOrder);
+      }
+    }
+    return orders;
   }
 }

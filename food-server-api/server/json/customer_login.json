@@ -1,0 +1,16 @@
+{
+	"success": true,
+	"data": {
+		"customerToken": "customer_123456",
+		"password": "123",
+		"details": {
+			"firstName": "Admin",
+			"lastName": "Admin",
+			"zipCode": "700059",
+			"emailId": "admin@gmail.com",
+			"address": "Test Test",
+			"phone": "1234567890"
+		},
+		"userId": "admin@gmail.com"
+	}
+}

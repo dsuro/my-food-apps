@@ -11,7 +11,7 @@ export class CustomerProfileService {
 
     getCustomerProfile(customerToken:string){
         if(customerToken){
-            const resourceUrl=this.helperService.getResourceUrl(SharedConstants.GET_CUSTOMER_PROFILE_URL)+`?customerToken=${customerToken}`;
+            const resourceUrl=this.helperService.getResourceUrl(SharedConstants.GET_CUSTOMER_PROFILE_URL,true)+`?customerToken=${customerToken}`;
             return this.http.get(resourceUrl);
         }
         else{
@@ -19,7 +19,7 @@ export class CustomerProfileService {
         }
     }
     updateCustomerProfile(customerProfile:any){
-        const resourceUrl=this.helperService.getResourceUrl(SharedConstants.UPDATE_CUSTOMER_PROFILE_URL);
+        const resourceUrl=this.helperService.getResourceUrl(SharedConstants.UPDATE_CUSTOMER_PROFILE_URL,true);
         return this.http.post(resourceUrl,customerProfile);
     }
 }
