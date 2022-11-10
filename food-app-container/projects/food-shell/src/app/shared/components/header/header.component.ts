@@ -67,9 +67,9 @@ export class HeaderComponent implements OnInit {
     .pipe(takeUntil(this.destroyNotifier$))
     .subscribe(response=>{
       //console.log(response);
-      if(response){
-        this.deliveryAddress=response['address'];
-        this.contactNo=response['phone'];
+      if(response && response['data'] && response['data']['details']){
+        this.deliveryAddress=response['data']['details']['address'];
+        this.contactNo=response['data']['details']['phone'];
       }
     });
   }
